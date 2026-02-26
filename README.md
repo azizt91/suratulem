@@ -1,66 +1,125 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 💌 SuratUlem - Platform Undangan Digital Terlengkap & Modern
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**SuratUlem** adalah platform SaaS (Software as a Service) pembuatan Undangan Pernikahan Digital berbasis Laravel 11. Dilengkapi dengan fitur-fitur premium, kustomisasi mandiri oleh pengantin, dan manajemen master data yang komprehensif untuk pemilik bisnis undangan digital.
 
-## About Laravel
+![SuratUlem Dashboard Preview](public/assets/images/logo_icon.png)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ✨ Fitur Unggulan
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 👰🤵 **Fitur Pengantin (User/Client)**
+- **Multi-Tema Premium:** Pilihan tema elegan mulai dari gaya minimalis modern hingga desain mewah.
+- **Onboarding Wizard:** Pengisian data terstruktur langkah demi langkah yang memudahkan pengguna baru.
+- **Manajemen Tamu & RSVP:** Fitur buku tamu interaktif dengan konfirmasi kehadiran (RSVP) instan.
+- **Amplop Digital (Cashless):** Terintegrasi dengan berbagai QRIS, Bank Transfer, maupun E-Wallet.
+- **Galeri Foto & Video:** Penambahan unlimited aset foto dan integrasi YouTube.
+- **Live Streaming & Maps:** Navigasi lokasi presisi (G-Maps) & tautan Live Streaming interaktif.
 
-## Learning Laravel
+### 🛡️ **Fitur Admin/Owner**
+- **Dashboard Analitik:** Ringkasan total user, undangan aktif, pendapatan, dan konversi RSVP.
+- **Manajemen Tema:** Sistem CRUD dinamis untuk menambah, mengubah, atau menonaktifkan tema undangan.
+- **Manajemen Paket:** Mengelola harga, fitur yang didapat, dan masa pendaftaran.
+- **Integrasi WhatsApp (Notifikasi):** *(Segera hadir)* - Pengingat tagihan dan penyebaran undangan otomatis.
+- **Manajemen Pengguna:** Pengelolaan role & permissions secara granular (Admin, Reseller, Client).
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 💻 Tech Stack
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Framework:** Laravel 11.x
+- **Backend Language:** PHP 8.2+
+- **Frontend / Styling:** Bootstrap 5, Tailwind CSS, Blade Templates
+- **Database:** MySQL / PostgreSQL
+- **Pustaka JS:** AOS (Animate on Scroll)
+- **Payment Gateway:** Duitku / Midtrans *(disiapkan untuk update plugin)*
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🚀 Panduan Instalasi (Local Development)
 
-### Premium Partners
+Ikuti langkah-langkah di bawah ini untuk menjalankan SuratUlem di komputer lokal Anda (XAMPP / Laragon).
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### 1. Kebutuhan Sistem
+Pastikan Anda sudah menginstal:
+- PHP >= 8.2
+- Composer
+- Node.js & NPM
+- MySQL / MariaDB
 
-## Contributing
+### 2. Kloning Repositori
+```bash
+git clone https://github.com/azizt91/suratulem.git
+cd suratulem
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 3. Instalasi Dependensi
+Jalankan perintah ini untuk menginstal seluruh pustaka PHP dan JavaScript:
+```bash
+composer install
+npm install
+npm run build
+```
 
-## Code of Conduct
+### 4. Konfigurasi Environment (.env)
+Salin file `.env.example` menjadi `.env` dan hasilkan kunci aplikasi:
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+Buka file `.env` di text editor Anda, lalu sesuaikan koneksi database:
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=suratulem
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 5. Migrasi Database dan Seeding
+Buat struktur tabel otomatis dan isi dengan data awal (Role, Admin awal, dan Data Dummy Tema):
+```bash
+php artisan migrate:fresh --seed
+```
+*Catatan: Pastikan Anda telah membuat database kosong bernama `suratulem` di MySQL sebelum menjalankan perintah ini.*
 
-## Security Vulnerabilities
+### 6. Tautkan Storage Public
+Agar gambar/aset statik dari tema terbaca di publik:
+```bash
+php artisan storage:link
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 7. Jalankan Server Lokal
+```bash
+php artisan serve
+```
+Aplikasi kini dapat diakses di browser melalui: `http://127.0.0.1:8000`
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🔐 Info Akses Login Default
+
+Setelah menjalankan seeder, Anda dapat masuk menggunakan akun Admin berikut:
+
+- **Login URL:** `http://127.0.0.1:8000/login`
+- **Email:** `admin@suratulem.com`
+- **Password:** `password`
+
+---
+
+## 📁 Struktur Direktori Penting
+
+Jika Anda ingin memodifikasi atau memperluas aplikasi pelajari letak direktori utama ini:
+- `app/Http/Controllers/Admin` → Logika backend khusus Owner/Superadmin.
+- `app/Http/Controllers/User` → Logika backend khusus Pengguna/Pengantin.
+- `resources/views/invitation/themes` → Kumpulan master file Blade dari berbagai tema (Dilarang mengubah tanpa pengetahuan HTML/Tailwind).
+- `public/assets/templates` → Root folder untuk file stastik (CSS kustom, JS, Images) spesifik milik tema.
+
+---
+
+## 📜 Lisensi & Penggunaan
+
+Source code ini adalah hasil custom web development berhak cipta. Dilarang mendistribusikan ulang atau menjual kembali source code secara bebas tanpa izin tertulis dari Developer Utama.
+
+© 2026 SuratUlem Digital Invitation Platform. All rights reserved.

@@ -27,11 +27,11 @@
             <div class="mb-3">
                 <label class="form-label fw-bold">Category</label>
                 <select class="form-select @error('category') is-invalid @enderror" name="category" style="border-radius:12px">
+                    <option value="Luxury / Premium" {{ old('category', $template->category) == 'Luxury / Premium' ? 'selected' : '' }}>Luxury / Premium</option>
                     <option value="Minimalist" {{ old('category', $template->category) == 'Minimalist' ? 'selected' : '' }}>Minimalist</option>
-                    <option value="Animasi" {{ old('category', $template->category) == 'Animasi' ? 'selected' : '' }}>Animasi</option>
-                    <option value="Templay" {{ old('category', $template->category) == 'Templay' ? 'selected' : '' }}>Templay</option>
-                    <option value="Bugoy" {{ old('category', $template->category) == 'Bugoy' ? 'selected' : '' }}>Bugoy</option>
-                    <option value="Awasome" {{ old('category', $template->category) == 'Awasome' ? 'selected' : '' }}>Awasome</option>
+                    <option value="Floral & Botanical" {{ old('category', $template->category) == 'Floral & Botanical' ? 'selected' : '' }}>Floral & Botanical</option>
+                    <option value="Modern & Creative" {{ old('category', $template->category) == 'Modern & Creative' ? 'selected' : '' }}>Modern & Creative</option>
+                    <option value="Religious / Traditional" {{ old('category', $template->category) == 'Religious / Traditional' ? 'selected' : '' }}>Religious / Traditional</option>
                     <option value="Khitan" {{ old('category', $template->category) == 'Khitan' ? 'selected' : '' }}>Khitan</option>
                 </select>
                 @error('category') <div class="invalid-feedback">{{ $message }}</div> @enderror

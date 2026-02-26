@@ -36,3 +36,8 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
     Route::post('users/{user}/activate', [\App\Http\Controllers\Admin\UserController::class, 'activateForOffline'])->name('users.activate');
     Route::get('revenue', [\App\Http\Controllers\Admin\RevenueController::class, 'index'])->name('revenue.index');
 });
+
+// Mempelai / Client Routes
+Route::middleware(['auth', 'role:mempelai'])->prefix('mempelai')->name('mempelai.')->group(function () {
+    Route::get('/paket', [\App\Http\Controllers\Mempelai\PackageController::class, 'index'])->name('paket.index');
+});

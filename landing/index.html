@@ -75,8 +75,8 @@
 
   /* Header */
   header{position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-  .nav{display:flex;align-items:center;gap:20px;padding:12px 0}
-  .logo{font-family:"Playfair Display",serif;font-size:25px;font-weight:700;color:var(--ink);text-decoration:none;letter-spacing:.01em}
+  .nav{display:flex;align-items:center;gap:20px;padding:12px 20px}
+  .logo{font-family:"Playfair Display",serif;font-size:25px;font-weight:700;color:var(--ink);text-decoration:none;letter-spacing:.01em;flex:none;white-space:nowrap}
   .logo span{color:var(--brand)}
   .nav-links{display:flex;gap:4px;margin-left:auto}
   .nav-links a{color:var(--ink-soft);text-decoration:none;font-weight:600;font-size:15px;padding:9px 13px;border-radius:10px}
@@ -92,8 +92,20 @@
   @media (prefers-color-scheme: dark){ .btn-wa{color:#0E1B14} .btn-wa:hover{color:#0E1B14} }
   .btn-ghost{background:var(--surface);color:var(--ink);border-color:var(--line)}
   .btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
-  .nav .btn{padding:10px 20px;min-height:44px}
-  @media (max-width:760px){ .nav-links{display:none} .nav .btn{margin-left:auto} }
+  .nav .btn{padding:10px 20px;min-height:44px;flex:none;white-space:nowrap}
+  @media (max-width:760px){ .nav-links{display:none} .nav{gap:16px;padding:10px 20px} .nav .btn{margin-left:auto} }
+  @media (max-width:480px){
+    .nav{gap:14px;padding:10px 16px}
+    .logo{font-size:21px}
+    .nav .btn{font-size:13.5px;padding:8px 14px;min-height:38px;gap:6px}
+    .nav .btn svg{width:17px;height:17px}
+  }
+  @media (max-width:360px){
+    .nav{gap:10px;padding:10px 14px}
+    .logo{font-size:19px}
+    .nav .btn{font-size:12.5px;padding:7px 12px;min-height:36px;gap:5px}
+    .nav .btn svg{width:15px;height:15px}
+  }
 
   /* Hero */
   .hero{padding:56px 0 64px;background:

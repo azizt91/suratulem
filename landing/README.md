@@ -16,3 +16,5 @@ Landing page statis Suratulem — undangan digital, 118 tema, order via WhatsApp
 ## Catatan
 - Link Preview Awasome tetap ke demo weddingpress.co.id.
 - Diketahui: link Preview Bugoy 04 masih mengarah ke demo Bugoy 03 (https://templateundangan.id/lp/bugoy-03/) — perlu dicek/perbaiki ke bugoy-04.
+
+<!-- Trigger deploy 2026-11-20: memicu deploy otomatis Vercel dari GitHub -->
